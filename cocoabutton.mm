@@ -74,8 +74,7 @@ void CocoaButton::click()
 
 void CocoaButton::setText(const QString &text)
 {
-    QString text_ = text + "*";
-    [m_wrpper->m_refButton setTitle: text_.toNSString()];
+    [m_wrpper->m_refButton setTitle: text.toNSString()];
 }
 
 void CocoaButton::moveEvent(QMoveEvent *event)
